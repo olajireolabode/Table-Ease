@@ -25,7 +25,7 @@ namespace TableEase
                     if (connection == null || connection.ConnectionString == "")
                     {
                         //Get Connection String for database
-                        string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Olajire\\Downloads\\tableeasefinalGUI (1)\\tableeasefinalGUI\\tableeasefinalGUI\\TableEase_2\\TableEase\\TableEase\\TableEase\\Database.mdf\";Integrated Security=True";
+                        string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True";
                         connection = new SqlConnection(connectionString);
                     }
                 }
